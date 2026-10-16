@@ -1,0 +1,110 @@
+/*
+Theme Name: PulseSync Support Portal
+Theme URI: https://example.com/pulsesync
+Author: NovaTech Solutions
+Description: NovaTech PulseSync IT support portal theme.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: pulsesync
+*/
+
+body {
+  margin: 0;
+}
+
+.site-nav .navbar-brand img {
+  width: 100px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.standalone-change-section {
+  color: #14263b;
+  background: #f4f8fd;
+}
+
+.standalone-change-section .form-wrap {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #dce6f1;
+  border-radius: 16px;
+}
+
+.standalone-change-section h1 {
+  color: #082c54;
+}
+
+.standalone-change-section .section-title {
+  margin-top: 24px;
+  padding-bottom: 8px;
+  color: #0878e8;
+  font-weight: 700;
+  border-bottom: 1px solid #dce6f1;
+}
+
+.standalone-change-section .change-logo {
+  width: 180px;
+  max-height: 145px;
+  object-fit: contain;
+  background: #020a16;
+  border-radius: 10px;
+}
+
+.standalone-change-section .form-control,
+.standalone-change-section .form-select {
+  border-color: #cbd8e7;
+}
+
+@media (max-width: 600px) {
+  .standalone-change-section .change-logo {
+    width: 110px;
+  }
+}
+
+@media print {
+  body > *:not(main) {
+    display: none !important;
+  }
+
+  main > *:not(#change-request) {
+    display: none !important;
+  }
+
+  #change-request {
+    display: block !important;
+    background: #fff !important;
+  }
+
+  #change-request .form-wrap {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  #change-request .no-print {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-nav .navbar-brand img {
+    width: 84px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 782px) {
+  .admin-bar .site-nav {
+    top: 46px;
+  }
+}
+
+@media (min-width: 783px) {
+  .admin-bar .site-nav {
+    top: 32px;
+  }
+}
